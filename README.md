@@ -8,7 +8,7 @@
 
 All the spiders I use in Scrapy have names related to real spiders. The name of the spider used in this project is taken from the genus `nephila`. These spiders weave impresive webs. You can check more at https://en.wikipedia.org/wiki/Nephila
 
-<img src="./Nephila-pilipes.jpg">
+<img src="./nephila.jpg">
 
 > Nephila pilipes eating a cicada.
 
