@@ -6,15 +6,13 @@ from urllib.error import HTTPError
 
 class NephilaSpider(scrapy.Spider):
     name = 'nephila'
-    allowed_domains=['amazon.com']
+    allowed_domains = ['amazon.com']
     start_urls = ['http://amazon.com/']
 
     def start_requests(self):
-        """Function to read keywords from keywords file"""
-        #keywords = csv.DictReader(open(os.path.join(os.path.dirname(__file__), "../resources/keywords.csv")))
-        search_text = 'earphones'
-        # for keyword in keywords:
-        #     search_text = keyword["keyword"]
+        """This method follows the page returned by the site search function"""
+        search_text = 'earphones'  # This variable contains the searched item
+
         try:
             url = "https://www.amazon.com/s?k={0}&ref=nb_sb_noss_2".format(search_text)
         except HTTPError as e:
@@ -23,7 +21,11 @@ class NephilaSpider(scrapy.Spider):
             yield scrapy.Request(url, callback=self.parse_item, meta={"search_text": search_text})
 
     def parse_item(self, response):
-        item = WebxtractionItem()
+        ''' This method parses a product page
+        @url https://www.amazon.com/s?k=earphones&ref=nb_sb_noss_2.html
+        @returns items 1
+        @scrapes title stars price imglink imgname
+        '''
         l = ItemLoader(item=WebxtractionItem(), response=response)
         l.add_css('title', '.a-size-medium.a-text-normal ::text')
         l.add_css('stars', '.aok-align-bottom ::text')
