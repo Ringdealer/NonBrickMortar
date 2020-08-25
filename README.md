@@ -10,7 +10,7 @@ All the spiders I use in Scrapy have names related to real spiders. The name of 
 
 <img src="./nephila.jpg">
 
-> Nephila pilipes eating a cicada.
+> *Nephila pilipes* eating a cicada.
 
 ---
 
