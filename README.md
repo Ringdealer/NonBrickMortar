@@ -22,6 +22,7 @@ All the spiders I use in Scrapy have names related to real spiders. The name of 
 - [Sample Output](#sample-ouput)
 - [Tasks](#tasks)
 - [Comments and Suggestions](#comment)
+- [Contact](#contact)
 
 ---
 
@@ -118,3 +119,7 @@ This project uses different packages that need to be installed in PyCharm. In or
 ```
 
 - Usually there will be several pages related to the searched item. It should be implemented a horizontal crawling.
+
+### Contact
+
+You can contact me via `Whatsapp` or `Telegram` with phone number `+5352688092`
