@@ -55,7 +55,8 @@ This project uses different packages that need to be installed in PyCharm. In or
  - Scrapy
  - Urllib3
 
-  Amazon could ban the computer visiting its web site due to restriction. If is is the case to bypass those restrictions we are going to use an USER_AGENT allowed by Amazon to be used by Google. 
+
+  Amazon could ban the computer visiting its web site. If it is the case, to bypass those restrictions we are going to use an USER_AGENT allowed by Amazon to be used by Google. 
 
   In order to get it we go to https://www.whatismybrowser.com/detect/what-is-my-user-agent and copy the User Agent shown in the web site. In the project folder we open `settings.py` and under the commented code for user agent we paste
   `USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36'`
@@ -88,8 +89,9 @@ This project uses different packages that need to be installed in PyCharm. In or
 ## Sample Output 
 
 ---
-<img src="demo.jpg">
->A sample
+<img src="./demo.jpg">
+
+> Dataframe as shown in Jupyter notebook.
 ---
 
 ## References
